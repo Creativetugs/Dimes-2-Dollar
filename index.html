@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimes 2 Dollar$ | Professional Bookkeeping & QuickBooks ProAdvisor</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#360F5E',
+                        deepPurple: '#29103F',
+                        accentPurple: '#6F2DA8',
+                        lightLavender: '#E9DDF2',
+                        softBg: '#F8F5FA',
+                        darkText: '#211B25',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #F8F5FA 0%, #E9DDF2 100%);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #360F5E 0%, #29103F 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 25px -5px rgba(54, 15, 94, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-softBg text-darkText font-sans antialiased selection:bg-lightLavender selection:text-primary">
+
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-lightLavender/60 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo & Name -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-11 h-11 rounded-xl bg-white flex items-center justify-center p-1.5 shadow-md border border-lightLavender group-hover:scale-105 transition-transform overflow-hidden">
+                    <img src="https://raw.githubusercontent.com/Creativetugs/Dimes-2-Dollar/refs/heads/main/icondollar2dime.png" alt="Dimes 2 Dollar$ Icon" class="w-full h-full object-contain" onerror="this.src='https://placehold.co/44x44/360F5E/FFFFFF?text=D2D'">
+                </div>
+                <div>
+                    <span class="text-xl font-bold tracking-tight text-primary">Dimes 2 Dollar$</span>
+                    <span class="block text-xs font-medium text-accentPurple tracking-wider uppercase">Bookkeeping & QuickBooks</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-darkText">
+                <a href="#about" class="hover:text-accentPurple transition-colors">Meet Laurie</a>
+                <a href="#services" class="hover:text-accentPurple transition-colors">Services</a>
+                <a href="#why-us" class="hover:text-accentPurple transition-colors">Why Choose Us</a>
+                <a href="#who-i-help" class="hover:text-accentPurple transition-colors">Who I Help</a>
+                <a href="#testimonials" class="hover:text-accentPurple transition-colors">Testimonials</a>
+                <a href="#process" class="hover:text-accentPurple transition-colors">Process</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <div class="hidden sm:flex items-center gap-4">
+                <a href="tel:5088688958" class="text-sm font-semibold text-primary hover:text-accentPurple hidden lg:block">
+                    <i class="fa-solid fa-phone mr-1.5"></i> (508) 868-8958
+                </a>
+                <a href="#contact" class="bg-primary hover:bg-accentPurple text-white px-5 py-2.5 rounded-xl font-medium text-sm shadow-sm transition-all transform active:scale-95">
+                    Free Consultation
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menuBtn" class="md:hidden text-primary p-2 text-xl focus:outline-none" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-lightLavender px-6 py-4 space-y-3 shadow-lg">
+            <a href="#about" class="block font-medium text-darkText hover:text-accentPurple py-1">Meet Laurie</a>
+            <a href="#services" class="block font-medium text-darkText hover:text-accentPurple py-1">Services</a>
+            <a href="#why-us" class="block font-medium text-darkText hover:text-accentPurple py-1">Why Choose Us</a>
+            <a href="#who-i-help" class="block font-medium text-darkText hover:text-accentPurple py-1">Who I Help</a>
+            <a href="#testimonials" class="block font-medium text-darkText hover:text-accentPurple py-1">Testimonials</a>
+            <a href="#process" class="block font-medium text-darkText hover:text-accentPurple py-1">Process</a>
+            <div class="pt-2 border-t border-lightLavender flex flex-col gap-3">
+                <a href="tel:5088688958" class="text-sm font-semibold text-primary">
+                    <i class="fa-solid fa-phone mr-1.5"></i> (508) 868-8958
+                </a>
+                <a href="#contact" class="bg-primary text-center text-white py-2.5 rounded-xl font-medium text-sm">
+                    Free Consultation
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative hero-gradient text-white py-20 lg:py-28 overflow-hidden">
+        <!-- Decorative Background Elements -->
+        <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-accentPurple/20 blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-lightLavender/10 blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-white/10 border border-white/20 px-4 py-1.5 rounded-full text-xs font-medium tracking-wide text-lightLavender backdrop-blur-md">
+                        <i class="fa-solid fa-award text-accentPurple"></i> Certified QuickBooks ProAdvisor &bull; 30+ Years Experience
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Your Numbers Should Give You Clarity — <span class="text-lightLavender">Not Another Headache.</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-lightLavender/90 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
+                        Reliable bookkeeping and accounting support for small businesses that want to stay organized, understand their finances, and focus on growth.
+                    </p>
+                    <p class="text-sm text-lightLavender/80 max-w-2xl mx-auto lg:mx-0">
+                        With more than 30 years of experience and a Certified QuickBooks ProAdvisor by your side, you can spend less time worrying about your books and more time running your business.
+                    </p>
+                    <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#contact" class="w-full sm:w-auto bg-white text-primary hover:bg-lightLavender px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all text-center">
+                            Schedule a Free Consultation
+                        </a>
+                        <a href="#services" class="w-full sm:w-auto bg-transparent border border-white/30 hover:bg-white/10 px-8 py-4 rounded-xl font-medium transition-all text-center">
+                            Explore Services
+                        </a>
+                    </div>
+                    <!-- Trust Badges Underneath -->
+                    <div class="pt-6 grid grid-cols-3 gap-4 border-t border-white/10 max-w-lg mx-auto lg:mx-0 text-center lg:text-left">
+                        <div>
+                            <span class="block text-2xl font-bold text-white">30+</span>
+                            <span class="text-xs text-lightLavender/80">Years Experience</span>
+                        </div>
+                        <div>
+                            <span class="block text-2xl font-bold text-white">ProAdvisor</span>
+                            <span class="text-xs text-lightLavender/80">QuickBooks Expert</span>
+                        </div>
+                        <div>
+                            <span class="block text-2xl font-bold text-white">1-on-1</span>
+                            <span class="text-xs text-lightLavender/80">Personalized Service</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Graphic Card / Laurie Portrait Thumbnail -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="bg-white/10 backdrop-blur-xl border border-white/20 p-6 rounded-3xl shadow-2xl relative max-w-sm w-full">
+                        <div class="absolute -top-4 -right-4 bg-accentPurple text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-md z-20">
+                            Personal Service
+                        </div>
+                        <div class="space-y-4 text-center">
+                            <div class="w-40 h-40 mx-auto rounded-2xl overflow-hidden shadow-xl border-4 border-white/30 relative">
+                                <img src="https://raw.githubusercontent.com/Creativetugs/Dimes-2-Dollar/refs/heads/main/lauri%20porttait.png" alt="Laurie - QuickBooks ProAdvisor" class="w-full h-full object-cover" onerror="this.src='https://raw.githubusercontent.com/Creativetugs/Dimes-2-Dollar/refs/heads/main/photo-e1be22dd-58a0-11ee-b635-27f112f9c339.jpg'">
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white">Laurie</h3>
+                                <p class="text-sm text-lightLavender">Certified QuickBooks ProAdvisor</p>
+                            </div>
+                            <div class="space-y-2 text-xs text-lightLavender/90 text-left pt-2 border-t border-white/10">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-circle-check text-accentReference"></i>
+                                    <span>Personalized bookkeeping built around your schedule</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-circle-check text-accentReference"></i>
+                                    <span>Accurate records & seamless reconciliations</span>
+                                </div>
+                            </div>
+                            <div class="pt-2">
+                                <a href="#contact" class="block w-full py-3 bg-accentPurple hover:bg-accentPurple/90 text-white rounded-xl font-semibold text-center shadow transition-all text-sm">
+                                    Let's Talk About Your Business
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-softBg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 relative flex justify-center">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-lightLavender bg-white max-w-md w-full aspect-[4/5] flex flex-col items-center justify-end">
+                        <img src="https://raw.githubusercontent.com/Creativetugs/Dimes-2-Dollar/refs/heads/main/lauri%20porttait.png" alt="Laurie portrait" class="absolute inset-0 w-full h-full object-cover" onerror="this.src='https://raw.githubusercontent.com/Creativetugs/Dimes-2-Dollar/refs/heads/main/photo-e1be22dd-58a0-11ee-b635-27f112f9c339.jpg'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent"></div>
+                        <div class="relative z-10 p-8 text-center space-y-2 w-full">
+                            <h3 class="text-2xl font-bold text-white">Laurie</h3>
+                            <p class="text-lightLavender font-medium text-sm">Owner & Certified QuickBooks ProAdvisor</p>
+                            <div class="pt-2">
+                                <span class="bg-white/20 text-white text-xs px-3 py-1 rounded-full backdrop-blur-sm">30+ Years Experience</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-block bg-lightLavender text-primary px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider">
+                        Meet Laurie
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-primary tracking-tight">
+                        More Than Bookkeeping. <span class="text-accentPurple">A Partner You Can Count On.</span>
+                    </h2>
+                    <p class="text-lg text-darkText/80 leading-relaxed font-light">
+                        For more than 30 years, Laurie has helped businesses stay organized, keep their financial records accurate, and gain a clearer understanding of their numbers.
+                    </p>
+                    <p class="text-darkText/70 leading-relaxed">
+                        As a Certified QuickBooks ProAdvisor, she combines hands-on experience with the tools and knowledge needed to keep your books in order. Whether you need ongoing monthly bookkeeping, payroll support, account reconciliation, sales tax filings, or help getting caught up, Dimes 2 Dollar$ provides personalized service built around your business.
+                    </p>
+                    <div class="bg-white p-6 rounded-2xl border border-lightLavender shadow-sm space-y-1">
+                        <p class="text-primary font-semibold text-base">You know your business.</p>
+                        <p class="text-darkText font-medium text-xl">Let Laurie help you understand your numbers.</p>
+                    </div>
+                    <div>
+                        <a href="#contact" class="inline-flex items-center gap-2 bg-primary hover:bg-accentPurple text-white px-6 py-3.5 rounded-xl font-medium shadow-md transition-all">
+                            <span>Meet Laurie / Book a Call</span>
+                            <i class="fa-solid fa-arrow-right text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 gradient-bg border-y border-lightLavender/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="bg-primary/10 text-primary px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider">
+                    Our Services
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-primary tracking-tight">
+                    Bookkeeping Support That Works Around Your Business
+                </h2>
+                <p class="text-darkText/70 text-lg font-light">
+                    Whether you need ongoing bookkeeping or help getting your records back on track, we provide practical financial support without making things unnecessarily complicated.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-3xl border border-lightLavender/80 shadow-sm card-hover space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-lightLavender text-primary flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary">Monthly Bookkeeping</h3>
+                    <p class="text-darkText/70 text-sm leading-relaxed">
+                        Keep your financial records organized and up to date so you always have a clearer picture of your business.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-3xl border border-lightLavender/80 shadow-sm card-hover space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-lightLavender text-primary flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary">Accounts Receivable</h3>
+                    <p class="text-darkText/70 text-sm leading-relaxed">
+                        Stay on top of billing and invoicing so you can improve cash flow and spend less time chasing payments.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-3xl border border-lightLavender/80 shadow-sm card-hover space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-lightLavender text-primary flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-file-invoice"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary">Accounts Payable</h3>
+                    <p class="text-darkText/70 text-sm leading-relaxed">
+                        Keep vendor bills organized and payments on schedule while reducing the administrative burden.
+                    </p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white p-8 rounded-3xl border border-lightLavender/80 shadow-sm card-hover space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-lightLavender text-primary flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary">Bank & Account Reconciliation</h3>
+                    <p class="text-darkText/70 text-sm leading-relaxed">
+                        Make sure your records match your accounts and identify discrepancies before they become bigger problems.
+                    </p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-white p-8 rounded-3xl border border-lightLavender/80 shadow-sm card-hover space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-lightLavender text-primary flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-money-check-dollar"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary">Payroll Services</h3>
+                    <p class="text-darkText/70 text-sm leading-relaxed">
+                        Take the stress out of payroll with accurate, timely processing for your business and employees.
+                    </p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-white p-8 rounded-3xl border border-lightLavender/80 shadow-sm card-hover space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-lightLavender text-primary flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-percent"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary">Sales Tax Filings</h3>
+                    <p class="text-darkText/70 text-sm leading-relaxed">
+                        Stay organized and meet your sales tax filing responsibilities with professional support.
+                    </p>
+                </div>
+
+                <!-- Service 7 -->
+                <div class="bg-white p-8 rounded-3xl border border-lightLavender/80 shadow-sm card-hover space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-lightLavender text-primary flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary">Financial Statements</h3>
+                    <p class="text-darkText/70 text-sm leading-relaxed">
+                        Get financial reports that help you understand where your business stands and make better decisions.
+                    </p>
+                </div>
+
+                <!-- Service 8 -->
+                <div class="bg-white p-8 rounded-3xl border border-lightLavender/80 shadow-sm card-hover space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-lightLavender text-primary flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-broom"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary">Catch-Up & Cleanup</h3>
+                    <p class="text-darkText/70 text-sm leading-relaxed">
+                        Behind on your books? We'll help organize, reconcile, and bring your records up to date.
+                    </p>
+                </div>
+
+                <!-- Callout Box for Services -->
+                <div class="bg-primary text-white p-8 rounded-3xl shadow-lg flex flex-col justify-between space-y-4">
+                    <div>
+                        <span class="text-accentPurple font-bold uppercase text-xs tracking-wider bg-white/10 px-3 py-1 rounded-full">Tailored Packages</span>
+                        <h3 class="text-xl font-bold mt-3">Need a Custom Setup?</h3>
+                        <p class="text-lightLavender/90 text-sm mt-2">
+                            Every business is unique. We'll tailor our bookkeeping services precisely to your workflow.
+                        </p>
+                    </div>
+                    <a href="#contact" class="bg-white text-primary hover:bg-lightLavender px-5 py-3 rounded-xl font-semibold text-sm text-center transition-all">
+                        Explore Our Services
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-primary rounded-3xl p-8 sm:p-12 lg:p-16 text-white relative overflow-hidden shadow-2xl">
+                <div class="absolute -right-12 -bottom-12 w-80 h-80 rounded-full bg-accentPurple/30 blur-3xl pointer-events-none"></div>
+                <div class="max-w-3xl space-y-6 relative z-10">
+                    <span class="bg-white/10 text-lightLavender px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider backdrop-blur-md">
+                        Financial Clarity
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
+                        Stop Guessing. Start Knowing.
+                    </h2>
+                    <p class="text-lg text-lightLavender/90 font-light leading-relaxed">
+                        Running a business is already demanding enough. You shouldn't have to spend your evenings trying to figure out whether your books are accurate, whether your invoices have been paid, or what your financial statements are telling you.
+                    </p>
+                    <p class="text-lightLavender/80 text-base leading-relaxed">
+                        Dimes 2 Dollar$ helps you get organized and gain the financial clarity you need to make informed decisions.
+                    </p>
+                    <div class="bg-white/10 p-6 rounded-2xl border border-white/20 backdrop-blur-md space-y-1">
+                        <p class="font-semibold text-white">You focus on your business.</p>
+                        <p class="text-lightLavender">We'll help you stay on top of the numbers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-us" class="py-20 softBg gradient-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="bg-primary/10 text-primary px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider">
+                    Why Choose Us
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-primary tracking-tight">
+                    Why Small Businesses Choose Dimes 2 Dollar$
+                </h2>
+                <p class="text-darkText/70 text-lg font-light">
+                    Experience, accuracy, and personalized dedication make all the difference for your peace of mind.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Reason 1 -->
+                <div class="bg-white p-8 rounded-3xl border border-lightLavender shadow-sm space-y-3">
+                    <div class="w-12 h-12 rounded-xl bg-lightLavender text-primary flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary">30+ Years of Experience</h3>
+                    <p class="text-darkText/70 text-sm leading-relaxed">
+                        Decades of hands-on experience means your books are handled with care and attention to detail.
+                    </p>
+                </div>
+
+                <!-- Reason 2 -->
+                <div class="bg-white p-8 rounded-3xl border border-lightLavender shadow-sm space-y-3">
+                    <div class="w-12 h-12 rounded-xl bg-lightLavender text-primary flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary">QuickBooks Expertise</h3>
+                    <p class="text-darkText/70 text-sm leading-relaxed">
+                        As a Certified QuickBooks ProAdvisor, Laurie understands how to use QuickBooks effectively to keep your financial information organized.
+                    </p>
+                </div>
+
+                <!-- Reason 3 -->
+                <div class="bg-white p-8 rounded-3xl border border-lightLavender shadow-sm space-y-3">
+                    <div class="w-12 h-12 rounded-xl bg-lightLavender text-primary flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-hands-holding-child"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary">Personalized Service</h3>
+                    <p class="text-darkText/70 text-sm leading-relaxed">
+                        You're not just another account number. Your bookkeeping support is tailored to your business and its specific needs.
+                    </p>
+                </div>
+
+                <!-- Reason 4 -->
+                <div class="bg-white p-8 rounded-3xl border border-lightLavender shadow-sm space-y-3">
+                    <div class="w-12 h-12 rounded-xl bg-lightLavender text-primary flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary">Reliable & Accurate</h3>
+                    <p class="text-darkText/70 text-sm leading-relaxed">
+                        Your financial records deserve consistency, attention to detail, and timely service.
+                    </p>
+                </div>
+
+                <!-- Reason 5 -->
+                <div class="bg-white p-8 rounded-3xl border border-lightLavender shadow-sm space-y-3 md:col-span-2 lg:col-span-2">
+                    <div class="w-12 h-12 rounded-xl bg-lightLavender text-primary flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary">Clear Communication</h3>
+                    <p class="text-darkText/70 text-sm leading-relaxed">
+                        You shouldn't need an accounting degree to understand what's happening with your business finances. We explain things clearly so you are always in the loop.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="who-i-help" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="bg-lightLavender text-primary px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider">
+                        Ideal Clients
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-primary tracking-tight">
+                        Bookkeeping for Small Business Owners
+                    </h2>
+                    <p class="text-darkText/80 text-base leading-relaxed font-light">
+                        Dimes 2 Dollar$ works with small-business owners who need dependable financial support without the complexity of a large accounting firm.
+                    </p>
+                    <div class="bg-softBg p-6 rounded-2xl border border-lightLavender">
+                        <p class="font-semibold text-primary">You don't have to figure it all out yourself.</p>
+                        <p class="text-sm text-darkText/70 mt-1">Let Laurie bring order and clarity to your business finances today.</p>
+                    </div>
+                </div>
+                <div class="lg:col-span-7">
+                    <div class="bg-softBg p-8 rounded-3xl border border-lightLavender space-y-4 shadow-sm">
+                        <h3 class="text-xl font-bold text-primary mb-2">You're a good fit if you:</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-accentPurple mt-1"></i>
+                                <span class="text-darkText/80 text-sm">Are spending too much time managing your books</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-accentPurple mt-1"></i>
+                                <span class="text-darkText/80 text-sm">Have fallen behind on bookkeeping</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-accentPurple mt-1"></i>
+                                <span class="text-darkText/80 text-sm">Need help keeping your accounts reconciled</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-accentPurple mt-1"></i>
+                                <span class="text-darkText/80 text-sm">Want more organized financial records</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-accentPurple mt-1"></i>
+                                <span class="text-darkText/80 text-sm">Need help with payroll or sales tax</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-accentPurple mt-1"></i>
+                                <span class="text-darkText/80 text-sm">Are struggling to keep up with invoicing</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-accentPurple mt-1"></i>
+                                <span class="text-darkText/80 text-sm">Want clearer financial information to make business decisions</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="py-20 gradient-bg border-y border-lightLavender/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="bg-primary/10 text-primary px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider">
+                    Testimonials
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-primary tracking-tight">
+                    What Our Clients Say
+                </h2>
+                <p class="text-darkText/70 text-lg font-light">
+                    Read how Laurie has brought clarity and calm to local small business owners.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-3xl border border-lightLavender shadow-sm flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="text-accentPurple flex gap-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-darkText/80 text-sm italic leading-relaxed">
+                            “Laurie has been an absolute lifesaver for our business. Before working with her, keeping track of invoices and reconciliations was a constant stress. Now everything is organized and accurate.”
+                        </p>
+                    </div>
+                    <div>
+                        <p class="font-bold text-primary text-sm">Sarah M.</p>
+                        <p class="text-xs text-darkText/60">Local Small Business Owner</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-3xl border border-lightLavender shadow-sm flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="text-accentPurple flex gap-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-darkText/80 text-sm italic leading-relaxed">
+                            “Her QuickBooks expertise is top-notch. She cleaned up our messy books in record time and explained everything so simply. I can finally focus on growing my business instead of wrestling with spreadsheets.”
+                        </p>
+                    </div>
+                    <div>
+                        <p class="font-bold text-primary text-sm">Michael R.</p>
+                        <p class="text-xs text-darkText/60">Contractor & Owner</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-3xl border border-lightLavender shadow-sm flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="text-accentPurple flex gap-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-darkText/80 text-sm italic leading-relaxed">
+                            “Personalized service at its best. Laurie truly cares about her clients and takes the time to understand how your business works. I couldn't recommend Dimes 2 Dollar$ more highly!”
+                        </p>
+                    </div>
+                    <div>
+                        <p class="font-bold text-primary text-sm">Jessica L.</p>
+                        <p class="text-xs text-darkText/60">Consulting Agency Owner</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="bg-lightLavender text-primary px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider">
+                    Simple Process
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-primary tracking-tight">
+                    Getting Started Is Simple
+                </h2>
+                <p class="text-darkText/70 text-lg font-light">
+                    We make transitioning and getting your books in order completely stress-free.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Step 1 -->
+                <div class="bg-softBg p-8 rounded-3xl border border-lightLavender space-y-4 relative">
+                    <span class="text-4xl font-extrabold text-accentPurple/40 block">01</span>
+                    <h3 class="text-xl font-bold text-primary">Schedule a Conversation</h3>
+                    <p class="text-darkText/70 text-sm leading-relaxed">
+                        Tell Laurie a little about your business and where you need help. No pressure, just a friendly chat.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-softBg p-8 rounded-3xl border border-lightLavender space-y-4 relative">
+                    <span class="text-4xl font-extrabold text-accentPurple/40 block">02</span>
+                    <h3 class="text-xl font-bold text-primary">Discuss Your Needs</h3>
+                    <p class="text-darkText/70 text-sm leading-relaxed">
+                        We'll look at your current bookkeeping situation and determine what support makes sense for you.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-softBg p-8 rounded-3xl border border-lightLavender space-y-4 relative">
+                    <span class="text-4xl font-extrabold text-accentPurple/40 block">03</span>
+                    <h3 class="text-xl font-bold text-primary">Get Your Books Back on Track</h3>
+                    <p class="text-darkText/70 text-sm leading-relaxed">
+                        Once we establish the right service, we'll take care of the details so you can focus on your business.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <a href="#contact" class="inline-block bg-primary hover:bg-accentPurple text-white px-8 py-4 rounded-xl font-semibold shadow-md transition-all">
+                    Schedule Your Free Consultation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 hero-gradient text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-primary/40 backdrop-blur-sm pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="bg-white/10 text-lightLavender px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider backdrop-blur-md">
+                        Let's Talk
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
+                        Have a Bookkeeping Question? Let's Talk About Your Business.
+                    </h2>
+                    <p class="text-lightLavender/90 text-base leading-relaxed font-light">
+                        Not sure what bookkeeping support you need? Whether you're starting a business, trying to get caught up, or simply tired of managing the books yourself, Laurie can help you determine what makes sense for your situation.
+                    </p>
+                    <div class="bg-white/10 p-6 rounded-2xl border border-white/20 backdrop-blur-md space-y-3">
+                        <p class="font-semibold text-white">Schedule a complimentary 30-minute consultation.</p>
+                        <p class="text-sm text-lightLavender">No pressure. Just a conversation about your business and your bookkeeping needs.</p>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-6 pt-2">
+                        <a href="tel:5088688958" class="flex items-center gap-3 text-white hover:text-lightLavender font-semibold">
+                            <div class="w-10 h-10 rounded-full bg-accentPurple flex items-center justify-center text-white">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <span>(508) 868-8958</span>
+                        </a>
+                        <a href="mailto:Laurie@dimes2dollarsbookkeeping.com" class="flex items-center gap-3 text-white hover:text-lightLavender font-semibold">
+                            <div class="w-10 h-10 rounded-full bg-accentPurple flex items-center justify-center text-white">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <span>Email Laurie</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form Card -->
+                <div class="lg:col-span-6">
+                    <div class="bg-white text-darkText p-8 sm:p-10 rounded-3xl shadow-2xl space-y-6">
+                        <h3 class="text-2xl font-bold text-primary">Schedule My Consultation</h3>
+                        <form id="consultationForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-darkText/70 mb-1">Your Name</label>
+                                <input type="text" required class="w-full px-4 py-3 rounded-xl border border-lightLavender focus:outline-none focus:border-accentPurple text-sm bg-softBg" placeholder="Jane Doe">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-darkText/70 mb-1">Business Name</label>
+                                <input type="text" required class="w-full px-4 py-3 rounded-xl border border-lightLavender focus:outline-none focus:border-accentPurple text-sm bg-softBg" placeholder="Doe Enterprises">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-darkText/70 mb-1">Email Address</label>
+                                <input type="email" required class="w-full px-4 py-3 rounded-xl border border-lightLavender focus:outline-none focus:border-accentPurple text-sm bg-softBg" placeholder="jane@example.com">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-darkText/70 mb-1">Phone Number</label>
+                                <input type="tel" required class="w-full px-4 py-3 rounded-xl border border-lightLavender focus:outline-none focus:border-accentPurple text-sm bg-softBg" placeholder="(508) 000-0000">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-darkText/70 mb-1">How can Laurie help?</label>
+                                <textarea rows="3" class="w-full px-4 py-3 rounded-xl border border-lightLavender focus:outline-none focus:border-accentPurple text-sm bg-softBg" placeholder="Tell us a little about your books..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary hover:bg-accentPurple text-white py-3.5 rounded-xl font-semibold shadow-md transition-all text-sm">
+                                Let's Talk About Your Business
+                            </button>
+                        </form>
+                        <div id="successMsg" class="hidden text-center p-4 bg-lightLavender text-primary rounded-xl font-medium text-sm">
+                            Thank you! Laurie will be in touch shortly to schedule your consultation.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-deepPurple text-white py-16 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Col 1 -->
+                <div class="space-y-4 lg:col-span-2">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-white flex items-center justify-center p-1 shadow-md overflow-hidden">
+                            <img src="https://raw.githubusercontent.com/Creativetugs/Dimes-2-Dollar/refs/heads/main/icondollar2dime.png" alt="Dimes 2 Dollar$ Icon" class="w-full h-full object-contain">
+                        </div>
+                        <span class="text-xl font-bold tracking-tight text-white">Dimes 2 Dollar$</span>
+                    </div>
+                    <p class="text-lightLavender/80 text-sm font-light max-w-sm">
+                        Accounting & Bookkeeping Services, LLC. Reliable bookkeeping support for small businesses with over 30 years of experience.
+                    </p>
+                </div>
+
+                <!-- Col 2 -->
+                <div class="space-y-3">
+                    <h4 class="font-bold text-sm uppercase tracking-wider text-lightLavender">Quick Links</h4>
+                    <ul class="space-y-2 text-sm text-lightLavender/80">
+                        <li><a href="#about" class="hover:text-white transition-colors">Meet Laurie</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
+                        <li><a href="#why-us" class="hover:text-white transition-colors">Why Choose Us</a></li>
+                        <li><a href="#testimonials" class="hover:text-white transition-colors">Testimonials</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3 -->
+                <div class="space-y-3">
+                    <h4 class="font-bold text-sm uppercase tracking-wider text-lightLavender">Contact Info</h4>
+                    <ul class="space-y-2 text-sm text-lightLavender/80">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-accentPurple"></i> Waterford, CT</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-phone text-accentPurple"></i> <a href="tel:5088688958" class="hover:text-white">(508) 868-8958</a></li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-envelope text-accentPurple"></i> <a href="mailto:Laurie@dimes2dollarsbookkeeping.com" class="hover:text-white truncate">Laurie@dimes2dollarsbookkeeping.com</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-xs text-lightLavender/60 gap-4">
+                <p>&copy; 2026 Dimes 2 Dollar$ Accounting & Bookkeeping Services, LLC. All rights reserved.</p>
+                <div class="flex items-center gap-6">
+                    <a href="#contact" class="bg-accentPurple hover:bg-accentPurple/90 text-white px-4 py-2 rounded-lg font-medium transition-all">
+                        Schedule a Consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Form Submission handler (No alert rule compliant)
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const form = document.getElementById('consultationForm');
+            const successMsg = document.getElementById('successMsg');
+            
+            form.style.display = 'none';
+            successMsg.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
